@@ -34,7 +34,7 @@ public class UIManager : MonoBehaviour
     {      
         if (Input.GetKeyDown(KeyCode.Escape))
         {            
-            if (titleScreen.activeSelf)
+            if (titleScreen.activeSelf || pauseScreen.activeSelf)
             {
                 LeaveGame();                                
             }
